@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.Header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-shrink: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.HeaderWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.HeaderSide {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.HeaderBrand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HeaderBrandLabel {
+    font-size: 13px;
+    font-weight: 700;
+    color: #010023;
+}
+
+.Main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.MainHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.MainHeaderSide {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.MainHeaderTitle {
+    font-weight: 700;
+    font-size: 14px;
+    color: #5a62e6;
+}
+
+.MainHeaderSearchInput {
+    outline: none;
+    border: 1px solid #ebebeb;
+    height: 35px;
+    flex-shrink: 0;
+    width: 300px;
+    padding: 0 1rem;
+    border-radius: 128px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #010023;
+}
+
+.MainHeaderSearchInput:disabled {
+    background-color: #f6f6f9;
+    cursor: not-allowed;
+}
+
+.MainWrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    overflow-y: auto;
+}
+
+/* Character Card */
+.CharacterCard {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ebebeb;
+    border-radius: 8px;
+}
+
+.CharacterWrapper {
+    width: 100%;
+    height: 300px;
+    flex-shrink: 0;
+    background: #f6f6f9;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.CharacterImage {
+    aspect-ratio: 230 / 355;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transform: scale(0.4);
+}
+
+/* Character Card Header */
+
+.CharacterWrapperHeader {
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CharacterWrapperName {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0a1a3d;
+}
+
+/* Gender */
+
+.CharacterWrapperGender {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 28px;
+    padding: 0 12px 0 8px;
+    border-radius: 128px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.CharacterWrapperGenderLabel {
+    font-size: 11px;
+    font-weight: 600;
+    color: #010023;
+}
+
+/* Character Card Footer */
+
+.CharacterWrapperFooter {
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    padding: 0 1rem;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+/* Character Card Status */
+
+.CharacterWrapperStatus {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 24px;
+    flex-shrink: 0;
+    padding: 0 8px 0 12px;
+    background: rgba(255, 87, 87, 0.1);
+    border-radius: 4px;
+}
+
+.CharacterWrapperStatusLabel {
+    font-size: 11px;
+    font-weight: 600;
+    color: #010023;
+}
+
+.CharacterWrapperStatusIcon {
+    font-size: 16px;
+    color: #ff5757;
+}
+
+/* Character Content */
+.CharacterContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+/* Character Occupation */
+
+.CharacterOccupation {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 28px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #f6f6f9;
+    padding: 0 12px 0 8px;
+    width: fit-content;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.CharacterOccupationIcon {
+    font-size: 16px;
+    color: #5a62e6;
+}
+
+.CharacterOccupationLabel {
+    font-size: 11px;
+    font-weight: 600;
+    color: #010023;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Character History */
+
+.CharacterHistory {
+    color: #334978;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 140%;
+    max-lines: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.MainHeaderCounter {
+    display: flex;
+    align-items: center;
+    background: rgba(90, 98, 230, 0.1);
+    border-radius: 4px;
+    height: 22px;
+    flex-shrink: 0;
+    padding: 0 10px;
+}
+
+.MainHeaderCounterLabel {
+    font-size: 11px;
+    font-weight: 600;
+    color: #5a62e6;
+}

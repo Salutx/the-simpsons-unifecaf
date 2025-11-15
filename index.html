@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Simpsons - UNIFECAF</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="Header">
+    <!-- Header Wrapper -->
+    <div class="HeaderWrapper">
+      <!-- Header Side // Header Brand -->
+      <div class="HeaderSide">
+        <a class="HeaderBrand" href="index.html" class="HeaderLogo">
+          <p class="HeaderBrandLabel">
+            The Simpsons - UNIFECAF
+          </p>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="Main">
+    <!-- Main Header -->
+    <div class="MainHeader">
+      <!-- Main Header Side -->
+      <div class="MainHeaderSide">
+        <!-- Main Header Counter -->
+        <div class="MainHeaderCounter">
+          <p class="MainHeaderCounterLabel">0</p>
+        </div>
+
+        <p class="MainHeaderTitle">Personagens de The Simpsons</p>
+      </div>
+
+      <!-- Main Header Side -->
+      <div class="MainHeaderSide">
+        <!-- [TODO-L] - Add the search logic -->
+        <input class="MainHeaderSearchInput" placeholder="Pesquisar por nome do personagem..." type="text" disabled
+          title="Desativado no momento" />
+      </div>
+    </div>
+
+
+    <!-- Main Wrapper -->
+    <div class="MainWrapper">
+
+      <!-- Character Card Template -->
+      <template class="character-template">
+        <div class="CharacterCard">
+          <!-- Character Wrapper -->
+          <div class="CharacterWrapper">
+            <img class="CharacterImage" src="" alt="Character Image" />
+
+            <div class="CharacterWrapperHeader">
+              <!-- Character Name -->
+              <p class="CharacterWrapperName">Marge Simpson</p>
+
+              <!-- Character Gender -->
+              <div class="CharacterWrapperGender">
+                <!-- Character Gender Icon -->
+                <div class="CharacterWrapperGenderIcon">
+                  <i class=""></i>
+                </div>
+
+                <!-- Character Gender Label -->
+                <p class="CharacterWrapperGenderLabel">
+                  Femenino
+                </p>
+              </div>
+            </div>
+
+            <div class="CharacterWrapperFooter">
+              <div class="CharacterWrapperStatus">
+                <!-- Character Status Label -->
+                <p class="CharacterWrapperStatusLabel">
+                  Estado: Vivo
+                </p>
+
+                <!-- Character Status Icon -->
+                <div class="CharacterWrapperStatusIcon">
+                  <i class=""></i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Character Content -->
+          <div class="CharacterContent">
+            <!-- Character Occupation -->
+            <div class="CharacterOccupation">
+              <!-- Character Occupation Icon -->
+              <div class="CharacterOccupationIcon">
+                <i class="ri-information-line"></i>
+              </div>
+
+              <!-- Character Occupation Label -->
+              <p class="CharacterOccupationLabel">
+                Dona de casa
+              </p>
+            </div>
+
+            <!-- Character History -->
+            <p class="CharacterHistory">
+              Marjorie Marge B. Simpson, (de soltera Bouvier ; nacida el 19 de marzo), es la feliz ama de casa y madre
+              de
+              tiempo completo de la familia Simpson. [...]
+            </p>
+          </div>
+        </div>
+      </template>
+
+    </div>
+  </main>
+
+  <!-- Script -->
+  <script type="module" src="./js/main.js" defer></script>
+</body>
+
+</html>
