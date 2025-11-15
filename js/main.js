@@ -7,9 +7,7 @@ import { fetchCharacters } from "./api.js"
  * @returns DocumentFragment
  */
 const renderCharacter = (character) => {
-    console.log("template", document.querySelector(`.CharacterCard`))
     const template = document.querySelector(`.${CHARACTER_TEMPLATE_ID}`);
-
     const clone = template.content.cloneNode(true);
 
     clone.querySelector(`.${CHARACTER_CLASSNAMES.CHARACTER_CARD}`).setAttribute('data-id', character._id);
